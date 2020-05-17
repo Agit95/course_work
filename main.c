@@ -20,7 +20,7 @@ int main (int argc, char* argv[])
     //
     /// Call new system call
     //
-    long ret_status = syscall(548);
+    long ret_status = syscall(548, atoi(argv[1]));
     printf(0 == ret_status ? "Sys call was done successfuly." : "Sys call failed.");
     //
     return 0;
